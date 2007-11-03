@@ -1,4 +1,4 @@
-%define		_lang		ca
+%define		_lang		de
 Summary:	German resources for Mozilla-firefox
 Summary(pl.UTF-8):	Niemieckie pliki językowe dla Mozilli-firefox
 Name:		mozilla-firefox-lang-%{_lang}
