@@ -2,12 +2,12 @@
 Summary:	German resources for Mozilla-firefox
 Summary(pl.UTF-8):	Niemieckie pliki językowe dla Mozilli-firefox
 Name:		mozilla-firefox-lang-%{_lang}
-Version:	2.0.0.11
+Version:	2.0.0.13
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/%{_lang}.xpi
-# Source0-md5:	4f221428edbd836612875132897c29b0
+# Source0-md5:	07e20d0fd2aeac731e5172437d19caae
 URL:		http://www.mozilla.org/
 BuildRequires:	unzip
 Requires:	mozilla-firefox >= %{version}
