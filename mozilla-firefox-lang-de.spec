@@ -32,8 +32,8 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_chromedir},%{_firefoxdir}/defaults/prof
 
 unzip %{SOURCE0} -d $RPM_BUILD_ROOT%{_libdir}
 mv -f $RPM_BUILD_ROOT%{_libdir}/chrome/* $RPM_BUILD_ROOT%{_chromedir}
-sed -e 's@chrome/de\.jar@de.jar@' $RPM_BUILD_ROOT%{_libdir}/chrome.manifest \
-	> $RPM_BUILD_ROOT%{_chromedir}/de.manifest
+sed -e 's@chrome/%{_lang}\.jar@%{_lang}.jar@' $RPM_BUILD_ROOT%{_libdir}/chrome.manifest \
+	> $RPM_BUILD_ROOT%{_chromedir}/%{_lang}.manifest
 mv -f $RPM_BUILD_ROOT%{_libdir}/*.rdf $RPM_BUILD_ROOT%{_firefoxdir}/defaults/profile
 
 %clean
@@ -41,7 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{_chromedir}/de.jar
-%{_chromedir}/de.manifest
+%{_chromedir}/%{_lang}.jar
+%{_chromedir}/%{_lang}.manifest
 # file conflict:
 #%{_firefoxdir}/defaults/profile/*.rdf
