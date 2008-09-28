@@ -2,12 +2,12 @@
 Summary:	German resources for Mozilla-firefox
 Summary(pl.UTF-8):	Niemieckie pliki językowe dla Mozilli-firefox
 Name:		mozilla-firefox-lang-%{_lang}
-Version:	2.0.0.14
+Version:	2.0.0.17
 Release:	1
 License:	GPL
 Group:		I18n
 Source0:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/%{_lang}.xpi
-# Source0-md5:	ffa5e21f4a91774d57ce18918e86539d
+# Source0-md5:	15aff3ccd24537dca742b85964f1c2ef
 URL:		http://www.mozilla.org/
 BuildRequires:	unzip
 Requires:	mozilla-firefox >= %{version}
