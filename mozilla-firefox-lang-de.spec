@@ -1,13 +1,13 @@
 %define		_lang		de
-Summary:	German resources for Mozilla-firefox
-Summary(pl.UTF-8):	Niemieckie pliki językowe dla Mozilli-firefox
+Summary:	German resources for Firefox
+Summary(pl.UTF-8):	Niemieckie pliki językowe dla Firefoksa
 Name:		mozilla-firefox-lang-%{_lang}
-Version:	3.0.2
+Version:	3.0.5
 Release:	1
-License:	GPL
+License:	MPL 1.1 or GPL v2+ or LGPL v2.1+
 Group:		I18n
 Source0:	http://releases.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/%{_lang}.xpi
-# Source0-md5:	be074bc3b73b61825aec291df5d66abc
+# Source0-md5:	4ef9d16b9c8efdfc55e9a908a11ca8f7
 URL:		http://www.mozilla.org/
 BuildRequires:	unzip
 Requires:	mozilla-firefox >= %{version}
@@ -19,10 +19,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_chromedir	%{_firefoxdir}/chrome
 
 %description
-German resources for Mozilla-firefox.
+German resources for Firefox.
 
 %description -l pl.UTF-8
-Niemieckie pliki językowe dla Mozilli-firefox.
+Niemieckie pliki językowe dla Firefoksa.
 
 %prep
 
