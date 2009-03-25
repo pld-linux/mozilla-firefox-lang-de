@@ -2,12 +2,12 @@
 Summary:	German resources for Firefox
 Summary(pl.UTF-8):	Niemieckie pliki językowe dla Firefoksa
 Name:		mozilla-firefox-lang-%{_lang}
-Version:	3.0.5
+Version:	3.0.7
 Release:	1
 License:	MPL 1.1 or GPL v2+ or LGPL v2.1+
 Group:		I18n
 Source0:	http://releases.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/%{_lang}.xpi
-# Source0-md5:	4ef9d16b9c8efdfc55e9a908a11ca8f7
+# Source0-md5:	805ba5f9541e49eab5399334193e8aa2
 URL:		http://www.mozilla.org/
 BuildRequires:	unzip
 Requires:	mozilla-firefox >= %{version}
